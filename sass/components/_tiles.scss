@@ -1,0 +1,92 @@
+.tiles {
+  @include flex-centered ();
+    @include width(480) {
+      align-content: center;
+      flex-direction: column;
+    }
+    @include width(768) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+      margin-left: calc(-1 * var(--card-set-gap));
+      margin-top: calc(-1 * var(--card-set-gap));
+    }
+    @include width(1200) {
+      flex-wrap: wrap;
+      margin-left: calc(-1 * var(--card-set-gap));
+      margin-top: calc(-1 * var(--card-set-gap));
+    }
+  }
+  .tiles__link {
+    text-decoration: none;
+  }
+  .tiles__item {
+/*     flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap); */
+    border: 1px solid rgba(238, 238, 238, 1);
+    transition: box-shadow var(--timing-function); 
+    @include width(480) {
+      margin-bottom: var(--card-set-gap);
+    }
+    @include width(768) {
+      flex-basis: calc(100% / 2 - var(--card-set-gap));
+      margin-left: var(--card-set-gap);
+      margin-top: var(--card-set-gap);
+    }
+    @include width(1200) {
+      flex-basis: calc(100% / 3 - var(--card-set-gap));
+      margin-left: var(--card-set-gap);
+      margin-top: var(--card-set-gap);
+    }
+    &:hover, &:focus {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+                  0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+                  0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+  .tiles__item_popup {
+      overflow: hidden;
+      position: relative;
+  }
+  /*.tiles__item_popup::before {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(33, 150, 243, 0.9);
+      transform: translateY(101%);
+      transition: transform var(--timing-function);
+  }*/
+  .tiles__item-toptext {
+      @include font(normal, 400, 18px, 1.56, 0.03em, #ffff);
+      position: absolute;
+      top: 0;
+      width: 101%;
+      height: 100%;
+      padding: 63px 24px;
+      margin: 0;
+      background-color: rgba(33, 150, 243, 0.9);
+      transform: translateY(101%);
+      transition: transform var(--timing-function);
+      overflow: auto;
+      .tiles__item:hover & {
+        transform: translateY(0);
+    }
+  }
+  .tiles__content-position {
+    padding: 20px 24px;
+  }
+  .tiles__title {
+    @include font(normal, 700, 18px, 2, 0.06em, var(--header-text-color));
+    text-decoration: none;
+    margin: 0;
+  }
+  .tiles__text {
+    @include font(normal, 400, 16px, 1.88, 0.03em, var(--line-text-color));
+    text-decoration: none;
+    margin: 0;
+  }

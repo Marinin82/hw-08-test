@@ -1,0 +1,6 @@
+.flex-table-centered {
+    @include flexible ();
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

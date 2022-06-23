@@ -1,0 +1,27 @@
+.contacts {
+    margin-left: auto;
+}
+.contacts__link {
+  @include font(normal, 500, 14px, 16px, 0.02em, var(--line-text-color));
+  text-decoration: none;
+  @include flexible ();
+  transition: color var(--timing-function), fill var(--timing-function);
+    &:hover, &:focus {
+      color: var(--accent-color);
+    }
+    &:hover .contacts__link-icon {
+      fill: var(--accent-color);
+    }
+}
+.contacts__link_position {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 10px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contacts__link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

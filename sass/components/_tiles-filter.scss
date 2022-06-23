@@ -1,0 +1,35 @@
+.tiles-filter {
+  @include flexible ();
+  list-style-type: none;
+    &__position {
+    margin: 0 auto 50px auto;
+    padding: 0;
+    }
+  }
+  .tiles-filter__button, .tiles-filter__button_active {
+    @include font(normal, 500, 16px, 1.62, 0.03em, none);
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+  }
+  .tiles-filter__button {
+    color: var(--header-text-color);
+    background-color: #f5f4fa;
+    transition: color var(--timing-function),
+                background-color var(--timing-function),
+                box-shadow var(--timing-function); 
+      &:hover, &:focus {
+        background-color: var(--accent-color);
+        color: #ffffff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+  }
+  .tiles-filter__button_active {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .tiles-filter__spacer:not(:last-child) {
+      margin-right: 8px;
+  }

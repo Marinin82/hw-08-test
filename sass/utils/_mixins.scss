@@ -1,0 +1,30 @@
+@mixin flexible () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+@mixin flex-centered () {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@mixin font($fst, $fw, $fs, $lh, $ls, $clr) {
+  font-style: $fst;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $clr;
+}
+@mixin width($size) {
+  @if $size == 480 {
+    @media screen and (max-width: 767px) { @content; }
+  } @else if $size == 768 {
+    @media screen and (min-width: 768px) and (max-width: 1199px) { @content; }
+  } @else if $size == 1200 {
+    @media screen and (min-width: 1200px) { @content; }
+  }
+}
