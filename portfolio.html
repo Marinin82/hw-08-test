@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <header class="header header__header-border">
+        <div class="container flex-table">
+          <a href="www.devstudio.com" class="logo"
+            ><span class="logo__active">Web</span
+            ><span class="logo__black">Studio</span></a>
+          <nav>
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a href="portfolio.html" class="navigation__link navigation__link_active">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a href="www.devstudio.com/contacts" class="navigation__link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts flex-table">
+            <a class="contacts__link contacts__link_position" href="mailto:info@devstudio.com">
+              <svg class="contacts__link-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>  
+              info@devstudio.com</a>
+            <a class="contacts__link contacts__link_position" href="tel:+3810961111111">
+              <svg class="contacts__link-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>  
+              +38 096 111 11 11</a>
+          </div>
+        </div>
+      </header>
+      <main>
+          <section class="section">
+              <div class="container">
+           <h1 class="visually-hidden">Заголовок</h1>
+           <ul class="tiles-filter tiles-filter__position">
+                <li class="tiles-filter__spacer"><button class="tiles-filter__button_active">Все</button></li>
+                <li class="tiles-filter__spacer"><button class="tiles-filter__button">Веб-сайты</button></li>
+                <li class="tiles-filter__spacer"><button class="tiles-filter__button">Приложения</button></li>
+                <li class="tiles-filter__spacer"><button class="tiles-filter__button">Дизайн</button></li>
+                <li class="tiles-filter__spacer"><button class="tiles-filter__button">Маркетинг</button></li>
+          </ul>
+            <ul class="tiles">
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio1-pc-x1.jpg 1x,
+                                    ./images/portfolio1-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio1-tablet-x1.jpg 1x,
+                                    ./images/portfolio1-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio1-phone-x1.jpg 1x,
+                                        ./images/portfolio1-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio1-pc-x1.jpg" alt="Проект 1" width="370">
+                    </picture>
+                    <p class="tiles__item-toptext">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                    </div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Технокряк</h2>
+                    <p class="tiles__text">Веб-сайт</p>
+                    </div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio2-pc-x1.jpg 1x,
+                                    ./images/portfolio2-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio2-tablet-x1.jpg 1x,
+                                    ./images/portfolio2-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio2-phone-x1.jpg 1x,
+                                        ./images/portfolio2-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio2-pc-x1.jpg" alt="Проект 2" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Постер New Orlean vs Golden Star</h2>
+                    <p class="tiles__text">Дизайн</p></div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio3-pc-x1.jpg 1x,
+                                    ./images/portfolio3-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio3-tablet-x1.jpg 1x,
+                                    ./images/portfolio3-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio3-phone-x1.jpg 1x,
+                                        ./images/portfolio3-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio3-pc-x1.jpg" alt="Проект 3" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Ресторан Seafood</h2>
+                    <p class="tiles__text">Приложение</p></div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio4-pc-x1.jpg 1x,
+                                    ./images/portfolio4-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio4-tablet-x1.jpg 1x,
+                                    ./images/portfolio4-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio4-phone-x1.jpg 1x,
+                                        ./images/portfolio4-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio4-pc-x1.jpg" alt="Проект 4" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Проект Prime</h2>
+                    <p class="tiles__text">Маркетинг</p></div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio5-pc-x1.jpg 1x,
+                                    ./images/portfolio5-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio5-tablet-x1.jpg 1x,
+                                    ./images/portfolio5-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio5-phone-x1.jpg 1x,
+                                        ./images/portfolio5-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio5-pc-x1.jpg" alt="Проект 5" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Проект Boxes</h2>
+                    <p class="tiles__text">Приложение</p></div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio6-pc-x1.jpg 1x,
+                                    ./images/portfolio6-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio6-tablet-x1.jpg 1x,
+                                    ./images/portfolio6-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio6-phone-x1.jpg 1x,
+                                        ./images/portfolio6-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio6-pc-x1.jpg" alt="Проект 6" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Inspiration has no Borders</h2>
+                    <p class="tiles__text">Веб-сайт</p></div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio7-pc-x1.jpg 1x,
+                                    ./images/portfolio7-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio7-tablet-x1.jpg 1x,
+                                    ./images/portfolio7-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio7-phone-x1.jpg 1x,
+                                        ./images/portfolio7-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio7-pc-x1.jpg" alt="Проект 7" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Издание Limited Edition</h2>
+                    <p class="tiles__text">Дизайн</p></div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio8-pc-x1.jpg 1x,
+                                    ./images/portfolio8-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio8-tablet-x1.jpg 1x,
+                                    ./images/portfolio8-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio8-phone-x1.jpg 1x,
+                                        ./images/portfolio8-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio8-pc-x1.jpg" alt="Проект 8" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Проект LAB</h2>
+                    <p class="tiles__text">Маркетинг</p></div>
+                    </a></article></li>
+                <li class="tiles__item">
+                    <article class="card">
+                    <a href class="tiles__link">
+                    <div class="tiles__item_popup">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio9-pc-x1.jpg 1x,
+                                    ./images/portfolio9-pc-x2.jpg 2x"
+                                    media="(min-width:1200px)"
+                        />
+                            <source
+                            srcset="./images/portfolio9-tablet-x1.jpg 1x,
+                                    ./images/portfolio9-tablet-x2.jpg 2x"
+                                    media="(max-width:1199px)"
+                        />
+                            <source
+                                srcset="./images/portfolio9-phone-x1.jpg 1x,
+                                        ./images/portfolio9-phone-x2.jpg 2x"
+                                        media="(max-width:767px)"
+                            />
+                    <img src="./images/portfolio9-pc-x1.jpg" alt="Проект 9" width="370">
+                        </picture>
+                    <p class="tiles__item-toptext">kakakaka</p></div>
+                    <div class="tiles__content-position">
+                    <h2 class="tiles__title">Growing Business</h2>
+                    <p class="tiles__text">Приложение</p></div>
+                    </a></article></li>
+          </ul>
+        </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer__wrap">
+          <div>
+            <a href="www.devstudio.com" class="logo"
+            ><span class="logo__active">Web</span
+            ><span class="logo__white">Studio</span></a>
+        <div class="footer__contacts-wrap">
+        <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+        <p class="footer__contacts-spacer"><a class="footer__contacts" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a>
+        </p>
+        <p class="footer__contacts-spacer"><a class="footer__contacts" href="tel:+3810961111111"
+            >+38 096 111 11 11</a>
+        </p>
+      </div>
+    </div>
+      <div class="footer__social-list-wrap">
+          <p class="footer__label">Присоединяйтесь</p>
+        <ul class="social__list">
+            <li class="social__item">
+               <a href="" class="social__link social__link_footer-style">
+                   <svg class="social__icon" width="20" height="20">
+                       <use href="./images/icons.svg#icon-instagram"></use>
+                   </svg>
+               </a></li>
+            <li class="social__item">
+               <a href="" class="social__link social__link_footer-style">
+                   <svg class="social__icon" width="20" height="20">
+                       <use href="./images/icons.svg#icon-twitter"></use>
+                   </svg>
+               </a></li>
+            <li class="social__item">
+               <a href="" class="social__link social__link_footer-style">
+                   <svg class="social__icon" width="20" height="20">
+                       <use href="./images/icons.svg#icon-facebook"></use>
+                   </svg>
+               </a></li>
+            <li class="social__item">
+               <a href="" class="social__link social__link_footer-style">
+                   <svg class="social__icon" width="20" height="20">
+                       <use href="./images/icons.svg#icon-linkedin"></use>
+                   </svg>
+               </a></li>
+       </ul>              
+      </div>
+            <div class="subscribe__footer-cont">            
+                <p class="footer__label">Подпишитесь на рассылку</p>
+                <div class="subscribe__wrap">
+                <input type="email" class="subscribe__input" name="user-email" placeholder="E-mail"/>
+                    <button type="submit" class="subscribe__big-button">
+                        <div class="subscribe__button-items_centered">
+                    <span class="subscribe__button-text">Подписаться</span>
+                <div class="subscribe__icon"><svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                </svg></div></div></button>
+            </div>
+        </div>
+    </footer>
+      </body>
+  </html>
