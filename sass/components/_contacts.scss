@@ -1,8 +1,18 @@
 .contacts {
     margin-left: auto;
+    @include width(480) {
+      display: none;
+    }
+    @include width(768) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include width(1200) {
+      @include flexible ()
+    }
 }
 .contacts__link {
-  @include font(normal, 500, 14px, 16px, 0.02em, var(--line-text-color));
   text-decoration: none;
   @include flexible ();
   transition: color var(--timing-function), fill var(--timing-function);
@@ -12,13 +22,30 @@
     &:hover .contacts__link-icon {
       fill: var(--accent-color);
     }
+    @include width(768) {
+      @include font(normal, 500, 14px, 0.86, 0.02em, var(--line-text-color));
+    }
+    @include width(1200) {
+      @include font(normal, 500, 14px, 0.875, 0.02em, var(--line-text-color));
+    }
 }
 .contacts__link_position {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 10px;
-  &:not(:last-child) {
-    margin-right: 50px;
+  @include width(768) {
+    &:first-child {
+      margin-top: 21px;
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      margin-bottom: 21px;
+    }
+    } 
+  @include width(1200) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 10px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .contacts__link-icon {

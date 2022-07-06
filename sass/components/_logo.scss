@@ -1,15 +1,25 @@
 .logo {
     font-family: 'Raleway';
     text-decoration: none;
+      &__active {
+        @include font(normal, 700, 24px, 0.86, 0.03em, var(--accent-color));
+      }
+      &__black {
+        @include font(normal, 700, 24px, 0.86, 0.03em, var(--header-text-color));
+      }
+      &__white {
+        @include font(normal, 700, 24px, 0.86, 0.03em,#ffff);
+      }
+    @include width(1200) {
     &__active {
-      @include font(normal, 700, 26px, 30px, 0.03em, var(--accent-color));
+      @include font(normal, 700, 26px, 0.87, 0.03em, var(--accent-color));
     }
     &__black {
-      @include font(normal, 700, 26px, 30px, 0.03em,#000000);
+      @include font(normal, 700, 26px, 0.87, 0.03em, var(--header-text-color));
     }
     &__white {
-      @include font(normal, 700, 26px, 30px, 0.03em,#ffffff);
+      @include font(normal, 700, 26px, 0.87, 0.03em,#ffff);
     }
   }
-
+}
 

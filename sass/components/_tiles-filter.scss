@@ -1,10 +1,20 @@
 .tiles-filter {
-  @include flexible ();
-  list-style-type: none;
-    &__position {
-    margin: 0 auto 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 40px;
+  padding: 0;
+  @include width(768) {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 50px;
     padding: 0;
-    }
+  }
+  @include width(1200) {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 50px;
+    padding: 0;
+  }
   }
   .tiles-filter__button, .tiles-filter__button_active {
     @include font(normal, 500, 16px, 1.62, 0.03em, none);
@@ -32,4 +42,9 @@
   }
   .tiles-filter__spacer:not(:last-child) {
       margin-right: 8px;
+      &:nth-child(-n+3) {
+        @include width(480) {
+        margin-bottom: 15px;
+        }
+      }
   }

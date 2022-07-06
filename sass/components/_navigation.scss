@@ -1,14 +1,20 @@
 .navigation {
-    list-style-type: none;
+  @include width(480) {
+    display: none;
+  }
+}
+.navigation__list {
     display: flex;
     margin: 0;
+    @include width(1200) {
     padding-left: 90px;
+    }
   }
 .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
   .navigation__link {
-    @include font(normal, 500, 14px, 16px, 0.02em, var(--header-color));
+    @include font(normal, 500, 14px, 16px, 0.02em, var(--header-text-color));
     text-decoration: none;
     cursor: pointer;
     padding-top: 32px;
